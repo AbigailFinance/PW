@@ -1,75 +1,162 @@
 
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#055f79">
 
-body {
-  font-family: Arial, sans-serif;
-  background:
-    radial-gradient(
-      circle at 50% 0%,
-      rgba(217, 150, 35, 0.16),
-      transparent 45%
-    ),
-    linear-gradient(
-      145deg,
-      #055f79 0%,
-      #03485d 45%,
-      #ecebe8 100%
-    );
-  color: #333;
-  margin: 0;
-  padding: 30px 15px;
-  min-height: 100vh;
-}
+  <title>Paul Waters | Abigail Finance</title>
 
-.card {
-  max-width: 400px;
-  margin: 30px auto;
-  background: #ffffff;
-  padding: 35px 25px;
-  border-radius: 14px;
-  text-align: center;
-  box-shadow: 0 8px 30px rgba(0,0,0,.18);
-  border-top: 4px solid #d99623;
-}
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-h1 {
-  color: #055f79;
-  margin-bottom: 5px;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(217, 150, 35, 0.16),
+          transparent 45%
+        ),
+        linear-gradient(
+          145deg,
+          #055f79 0%,
+          #03485d 45%,
+          #ecebe8 100%
+        );
+      color: #333;
+      margin: 0;
+      padding: 30px 15px;
+      min-height: 100vh;
+    }
 
-.company {
-  color: #777;
-  margin-bottom: 25px;
-}
+    .card {
+      max-width: 400px;
+      margin: 30px auto;
+      background: #ffffff;
+      padding: 35px 25px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+      border-top: 4px solid #d99623;
+    }
 
-.detail {
-  margin: 15px 0;
-}
+    h1 {
+      color: #055f79;
+      margin: 0 0 5px;
+      font-size: 27px;
+    }
 
-a {
-  color: #055f79;
-  text-decoration: none;
-}
+    .company {
+      color: #777;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
 
-.button {
-  display: block;
-  background: #055f79;
-  color: white;
-  padding: 15px;
-  border-radius: 7px;
-  margin-top: 28px;
-  font-weight: bold;
-}
+    .detail {
+      margin: 22px 0;
+      line-height: 1.6;
+    }
 
-.button:hover {
-  background: #d99623;
-  color: #ffffff;
-}
+    .detail strong {
+      display: block;
+      color: #333;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
 
-.footer {
-  color: #888;
-  font-size: 13px;
-  margin-top: 25px;
-}
+    a {
+      color: #055f79;
+      text-decoration: none;
+    }
+
+    .button {
+      display: block;
+      background: #055f79;
+      color: #ffffff;
+      padding: 16px;
+      border-radius: 7px;
+      margin-top: 30px;
+      font-weight: bold;
+      transition: background 0.2s ease;
+    }
+
+    .button:hover {
+      background: #d99623;
+      color: #ffffff;
+    }
+
+    .footer {
+      color: #888;
+      font-size: 13px;
+      margin-top: 28px;
+    }
+
+    .footer-line {
+      width: 45px;
+      height: 3px;
+      background: #d99623;
+      margin: 20px auto 0;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 15px;
+      }
+
+      .card {
+        margin: 20px auto;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <h1>Paul Waters</h1>
+
+    <div class="company">
+      Case Manager | Abigail Finance Ltd
+    </div>
+
+    <div class="detail">
+      <strong>Telephone</strong>
+      <a href="tel:01913237838">
+        0191 323 7838
+      </a>
+    </div>
+
+    <div class="detail">
+      <strong>Email</strong>
+      <a href="mailto:paul@abigailfinance.co.uk">
+        paul@abigailfinance.co.uk
+      </a>
+    </div>
+
+    <div class="detail">
+      <strong>Website</strong>
+      <a href="https://www.abigailfinance.co.uk">
+        www.abigailfinance.co.uk
+      </a>
+    </div>
+
+    <a class="button" href="Paul_Waters_Abigail_Finance.vcf">
+      Add to Contacts
+    </a>
+
+    <div class="footer">
+      Your Bridge to Property Success
+      <div class="footer-line"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
